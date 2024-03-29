@@ -1,0 +1,21 @@
+html, body {
+    height: 100%;
+}
+
+#container-wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    min-height: 100%;
+    margin: 0;
+}
+
+#container {
+    display: flex;
+    width: 750px;
+    height: 750px;
+    max-width: 750px;
+    max-height: 750px;
+    background-color: red;
+}
