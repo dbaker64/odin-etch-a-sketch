@@ -1,8 +1,15 @@
 let num;
+let color = "blue";
 let containerDiv = document.querySelector("#container");
 let resetButton = document.querySelector("#reset");
+let root = document.querySelector(":root");
+let rootStyles = getComputedStyle(root);
+let colorButton = document.querySelector("#color");
 resetButton.addEventListener("click", function() {
     reset();
+})
+colorButton.addEventListener("click", function() {
+    getColor();
 })
 
 function getNum() {
@@ -60,6 +67,11 @@ function reset() {
         element.remove();
     })
     getNum();
+}
+
+function getColor() {
+    color = prompt("What color would you like to draw in?");
+    root.style.setProperty("--color", `${color}`);
 }
 
 //starting program
