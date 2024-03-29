@@ -9,6 +9,7 @@ html, body {
     height: 100%;
     min-height: 100%;
     margin: 0;
+    flex-direction: column;
 }
 
 #container {
@@ -36,4 +37,14 @@ html, body {
 
 .drawn {
     background-color: blue;
+}
+
+#reset {
+    padding: 20px 40px;
+    font-size: 24px;
+    margin: 20px;
+    border-style: solid;
+    border-width: 10px;
+    border-radius: 8px;
+    border-color: green;
 }
